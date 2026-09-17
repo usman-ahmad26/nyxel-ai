@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work:Nyxel</title>
+<meta name="description" content="Recent builds from Nyxel — automation pipelines and RAG applications, explained in detail.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 8L17 22H7L4 8L12 2Z" stroke="#C49A5A" stroke-width="1.4"/><path d="M12 2L20 8M12 2L4 8M20 8L17 22M20 8H4M4 8L7 22M7 22H17" stroke="#C49A5A" stroke-width="0.7" opacity="0.6"/></svg>
+      Nyxel
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Start a project</a>
+  </nav>
+</header>
+
+
+<section class="page-header">
+  <div class="wrap">
+    <h1>Recent builds.</h1>
+    <p>Self-initiated and early-client work while Nyxel's case-study roster grows — each one built and shipped, not just prototyped.</p>
+  </div>
+</section>
+
+<article class="case">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-tag">RAG application</div>
+        <h2>Local delivery recommendation engine</h2>
+        <p class="lede">A RAG-powered recommendation layer for a food delivery platform, grounded in live menu and order data rather than static suggestions.</p>
+      </div>
+      <div class="case-detail">
+        <p>The problem: generic "popular items" recommendations that ignored what was actually in stock or trending in a given area on a given day.</p>
+        <p>The build: a retrieval layer indexed against live menu and order data, feeding a ranking step that re-generates suggestions as inventory and demand shift — instead of a fixed list updated by hand.</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="case">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-tag">Automation + RAG</div>
+        <h2>Codebase chat agent</h2>
+        <p class="lede">An agentic assistant that lets a team query and reason over a full GitHub repository in natural language.</p>
+      </div>
+      <div class="case-detail">
+        <p>The problem: onboarding new engineers, or just answering "where does X happen in this codebase," meant grepping through files by hand.</p>
+        <p>The build: an agent that indexes a repo's structure and history, then answers questions by actually reading relevant files and tracing logic — not guessing from filenames alone.</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="case">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-tag">AI evaluation</div>
+        <h2>Claim verification pipeline</h2>
+        <p class="lede">A grounding layer that checks a model's output against a source document and flags claims the document doesn't actually support.</p>
+      </div>
+      <div class="case-detail">
+        <p>The problem: outputs that sound confident and well-written but quietly say things the source material never claimed.</p>
+        <p>The build: a checker that breaks a response into individual claims, checks each against the cited source, and flags anything unsupported before it reaches the end user.</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<footer class="wrap">
+  <div>&copy; 2026 Nyxel. AI automation &amp; RAG delivery, Lahore.</div>
+  <div class="foot-links">
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
