@@ -1,4 +1,4 @@
-// Contact form — placeholder submit handler.
+// Contact form: placeholder submit handler.
 // Swap for a real endpoint (Formspree, Netlify Forms, your own API) before going live.
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#contact-form");
@@ -6,8 +6,28 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const btn = form.querySelector(".submit-btn");
-      btn.textContent = "Sent — we'll reply within 48h";
+      const originalText = btn.textContent;
+      btn.textContent = "Sending...";
       btn.disabled = true;
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            btn.textContent = "Sent, we'll reply within 48h";
+            form.reset();
+          } else {
+            btn.textContent = "Something went wrong, try again";
+            btn.disabled = false;
+          }
+        })
+        .catch(() => {
+          btn.textContent = "Something went wrong, try again";
+          btn.disabled = false;
+        });
     });
   }
 
