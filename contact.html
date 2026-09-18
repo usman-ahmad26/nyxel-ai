@@ -38,15 +38,15 @@
       <form id="contact-form" action="https://formspree.io/f/xeaoqwpd" method="POST">
         <div>
           <label for="name">Name</label>
-          <input id="name" type="text" required>
+          <input id="name" name="name" type="text" required>
         </div>
         <div>
           <label for="email">Work email</label>
-          <input id="email" type="email" required>
+          <input id="email" name="email" type="email" required>
         </div>
         <div>
           <label for="msg">What do you want to automate or build?</label>
-          <textarea id="msg" required></textarea>
+          <textarea id="msg" name="message" required></textarea>
         </div>
         <button class="submit-btn" type="submit">Send</button>
       </form>
