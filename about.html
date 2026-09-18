@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About:Nyxel</title>
+<title>About | Nyxel</title>
 <meta name="description" content="Who builds Nyxel, and how AI-assisted, human-reviewed delivery actually works.">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +30,7 @@
 <section class="page-header">
   <div class="wrap">
     <h1>Built by someone who ships, not a template studio.</h1>
-    <p>Nyxel is a small, hands-on delivery practice — every build gets direct attention, start to finish.</p>
+    <p>Nyxel is a small, hands-on delivery practice: every build gets direct attention, start to finish.</p>
   </div>
 </section>
 
@@ -38,8 +38,8 @@
   <div class="wrap">
     <div class="about-grid">
       <div>
-        <p>Nyxel is run by a Computer Science student in Lahore building a serious AI and full-stack portfolio alongside coursework — automation pipelines, RAG applications, and evaluation tooling, built and shipped rather than left as demos.</p>
-        <p>AI tools are part of the build process here, the same way they're part of most serious engineering work now. What isn't automated is the judgment: every architecture decision, every prompt, every data-handling choice is reviewed and understood before it ships — not generated and left unchecked.</p>
+        <p>Nyxel is run by a Computer Science student in Lahore building a serious AI and full-stack portfolio alongside coursework: automation pipelines, RAG applications, and evaluation tooling, built and shipped rather than left as demos.</p>
+        <p>AI tools are part of the build process here, the same way they're part of most serious engineering work now. What isn't automated is the judgment: every architecture decision, every prompt, every data-handling choice is reviewed and understood before it ships, not generated and left unchecked.</p>
         <p>That's the actual pitch: you're not getting a templated agency package, and you're not getting an unsupervised AI output either. You're getting a build that one person stands behind end to end.</p>
       </div>
       <div class="about-stats">
@@ -73,6 +73,30 @@
     <a href="contact.html">Contact</a>
   </div>
 </footer>
+
+<div id="faq-widget">
+  <button id="faq-toggle" aria-label="Open chat" aria-expanded="false">
+    <svg id="faq-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5z"/></svg>
+    <svg id="faq-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+
+  <div id="faq-panel" role="dialog" aria-label="Nyxel FAQ chat">
+    <div id="faq-header">
+      <div>
+        <div id="faq-title">Ask Nyxel</div>
+        <div id="faq-subtitle">Rates, process, and services: quick answers</div>
+      </div>
+    </div>
+    <div id="faq-messages"></div>
+    <div id="faq-chips"></div>
+    <form id="faq-form">
+      <input id="faq-input" type="text" placeholder="Ask about pricing, RAG, timelines…" autocomplete="off">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

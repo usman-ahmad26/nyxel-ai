@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services:Nyxel</title>
-<meta name="description" content="Nyxel's two disciplines : AI automation delivery and full-scale RAG applications — explained in detail.">
+<title>Services | Nyxel</title>
+<meta name="description" content="Nyxel's two disciplines: AI automation delivery and full-scale RAG applications, explained in detail.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
 <section class="page-header">
   <div class="wrap">
     <h1>What we build.</h1>
-    <p>Two disciplines, each scoped and delivered by the same small team — no handoff between "the AI people" and "the people who actually ship it."</p>
+    <p>Two disciplines, each scoped and delivered by the same small team, with no handoff between "the AI people" and "the people who actually ship it."</p>
   </div>
 </section>
 
@@ -39,12 +39,12 @@
     <div class="feature-grid">
       <div class="feature-copy">
         <h2>AI automation delivery</h2>
-        <p>We replace the manual steps between your tools — the copy-pasting, the re-typing, the "someone checks this every morning" tasks — with pipelines that run on their own and flag you only when something needs a decision.</p>
+        <p>We replace the manual steps between your tools: the copy-pasting, the re-typing, the "someone checks this every morning" tasks, with pipelines that run on their own and flag you only when something needs a decision.</p>
         <ul class="feature-list">
           <li>Built on n8n, LangGraph, or direct model + API integrations, whichever fits your stack</li>
           <li>Triggers off events you already have: form submissions, new emails, CRM updates, webhooks</li>
           <li>Every automation ships with a plain-language runbook, not just code</li>
-          <li>Human-reviewed logic at every branch — no black-box decision paths</li>
+          <li>Human-reviewed logic at every branch: no black-box decision paths</li>
         </ul>
       </div>
       <div class="feature-art">
@@ -70,7 +70,7 @@
     <div class="feature-grid reverse">
       <div class="feature-copy">
         <h2>Full-scale RAG applications</h2>
-        <p>A retrieval-augmented system that answers from your own documents and data — not from whatever the underlying model happened to memorize. Built for the cases where a wrong answer actually costs you something.</p>
+        <p>A retrieval-augmented system that answers from your own documents and data, not from whatever the underlying model happened to memorize. Built for the cases where a wrong answer actually costs you something.</p>
         <ul class="feature-list">
           <li>Chat interfaces, internal knowledge tools, and customer-facing assistants</li>
           <li>Retrieval grounded in your source documents, with citations back to them</li>
@@ -131,6 +131,30 @@
     <a href="contact.html">Contact</a>
   </div>
 </footer>
+
+<div id="faq-widget">
+  <button id="faq-toggle" aria-label="Open chat" aria-expanded="false">
+    <svg id="faq-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5z"/></svg>
+    <svg id="faq-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+
+  <div id="faq-panel" role="dialog" aria-label="Nyxel FAQ chat">
+    <div id="faq-header">
+      <div>
+        <div id="faq-title">Ask Nyxel</div>
+        <div id="faq-subtitle">Rates, process, and services: quick answers</div>
+      </div>
+    </div>
+    <div id="faq-messages"></div>
+    <div id="faq-chips"></div>
+    <form id="faq-form">
+      <input id="faq-input" type="text" placeholder="Ask about pricing, RAG, timelines…" autocomplete="off">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
